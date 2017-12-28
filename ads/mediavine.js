@@ -25,5 +25,5 @@ export function mediavine(global, data) {
   global.$mediavine = {
     slug: data.site,
   };
-  loadScript(global, 'https://amp.mediavine.com/wrapper.min.js');
+  loadScript(global, 'https://test.mediavine.com/wrapper.min.js');
 }
