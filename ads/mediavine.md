@@ -34,3 +34,13 @@ For details on the configuration semantics, please contact [Mediavine](http://ww
 * `data-site` - The site's unique name this ad will be served on. This is the same name from your Mediavine script wrapper.
 
 Each site must be approved and signed up with [Mediavine](http://www.mediavine.com) prior to launch. The site name will be the same as name in the Mediavine script wrapper. The site name `amp-project` can be used for testing and will serve placeholder ads.
+
+## Consent and GDPR
+ 
+Mediavine has set the `consentHandlingOverride` config value to `true` meaning that EU traffic will be prompted with the `<amp-consent>` component. Ad personalization is affected based on the user's interaction with this component.
+ 
+Consent selections:
+1. Accept: Personalized Ads
+2. Reject: Non-Personalized Ads
+3. Unknown/Not Required: Personalized Ads (Sent for Non-EU locations)
+4. Dismiss/Unknown: Non-Personalized Ads
